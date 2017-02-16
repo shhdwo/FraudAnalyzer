@@ -6,7 +6,6 @@ import java.util.*;
 
 public class FraudAnalyzer {
 	
-	//private List<Transaction> testedTransactions = new ArrayList<Transaction>();
 	private List<Transaction> suspiciousTransactions = new ArrayList<Transaction>();
 	private int[] vulnerableUsers = {542, 1052, 2103};
 	private int[] immuneUsers = {101, 606};
@@ -20,7 +19,6 @@ public class FraudAnalyzer {
 				else if (isSuspicious(aTransaction, examinedTransactions)) {
 					suspiciousTransactions.add(aTransaction);
 				}
-		
 			}
 		}
 		printOutSuspicious();
